@@ -19,7 +19,7 @@ def clean_CDS(input_file, output_file=False):
         elif "N" in str(record.seq):
             n_dropped += 1 
             pass
-        elif str(select_rec.seq[0:3]) != "ATG":
+        elif str(record.seq[0:3]) != "ATG":
             n_dropped += 1 
             pass
         else:

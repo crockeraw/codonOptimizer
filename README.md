@@ -7,7 +7,7 @@ Introduction
 codonOptimizer.py is a module with functions to calculate relative synonymous codon usage (RSCU) values, 
 and to use RSCU values to create codon optimized versions of provided gene or coding sequences. 
 
-Example use cases are provided as jupyter notebooks.
+Example use cases are provided below and can be run using a cloned version of this repository as your working directory. 
 
 Requirements
 ------------
@@ -27,8 +27,8 @@ Or clone this repo and import the module manually
 Example
 -------
 
-Comparing codon usage patterns in *Saccharomyces cerevisiae* and *Aureobassidium pullulans*
-
+### Comparing codon usage patterns in *Saccharomyces cerevisiae* and *Aureobassidium pullulans*
+Collaborators were unable to express GFP-tagged proteins in the fungus *Aureobassidium pullulans*, and were concered that codon preferences in *A. pullulans* could be causing poor expression. The following code compares codon usage between *S. cerevisiae*, the organism for which this GFP was codon optimized previously, and *A. pullulans*. This example relies on the very popular librarires numpy, pandas, and matplotlib. 
 ```
 import codonOptimizer as co
 
@@ -56,7 +56,8 @@ ax.set_aspect('auto')
 ```
 ![](README_files/example.png)
 
-Codon optimizing green fluorescent protein for expression in *Aureobassidium pullulans*
+### Codon optimizing green fluorescent protein for expression in *Aureobassidium pullulans*
+Codon preferences appeared quite different between these two organisms, so here we convert every codon in the GFP sequence into the *A. pullulans* preferred codon for that amino acid. 
 ```
 import codonOptimizer as co
 

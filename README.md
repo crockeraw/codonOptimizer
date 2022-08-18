@@ -1,6 +1,18 @@
-# codonOptimizer 
-This tool evaluates coding sequences and returns a dictionary or CSV of codon preferences.  
+===============
+codonOptimizer.py
+===============
 
-It can also accept a gene file and return a codon optimized version of the same sequence.  
+Introduction
+------------
 
-An example case for its use is provided, and compares the codon preferences of two fungi, *Aureobassidium pullulans* and *Saccharomyces cerevisiae*.
+codonOptimizer.py is a module with functions to calculate relative synonymous codon usage (RSCU) values, 
+and to use RSCU values to create codon optimized versions of provided gene or coding sequences. 
+
+Example use cases are provided as jupyter notebooks.
+
+Requirements
+------------
+
+codonOptimizer.py relies on Biopython.
+Installation requires setuptools.
+

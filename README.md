@@ -16,6 +16,14 @@ codonOptimizer.py relies on Biopython.
 Installation requires setuptools.
 The example below requires numpy, pandas, and matplotlib.
 
+Installation
+------------
+
+Install using pip:
+`pip install -i https://test.pypi.org/simple/ codonOptimizer==0.1.0`
+
+Or clone this repo and import the module manually
+
 Example
 -------
 
